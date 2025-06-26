@@ -1,0 +1,15 @@
+services:
+  kippo-graph:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./kippo-graph:/var/www/html
+      - ./nginx.conf:/etc/nginx/sites-available/default
+    restart: unless-stopped
+    networks:
+      - kippo-network
+
+networks:
+  kippo-network:
+    driver: bridge
