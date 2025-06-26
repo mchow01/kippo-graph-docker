@@ -2,6 +2,14 @@
 
 A Dockerized version of Kippo-Graph
 
+# Quick Start (assuming local environment)
+
+1. Clone this repository `git clone https://github.com/mchow01/kippo-graph-docker`
+2. Make a copy of `config.php.dist` found in `https://github.com/ikoniaris/kippo-graph/blob/master/config.php.dist` as `config.php` into the `kippo-graph-docker` folder.  Fill in MySQL server configuration information.
+3. `cd kippo-graph-docker`
+4. Run `docker-compose up -d` or `docker compose up -d`
+5. Go to `http://localhost:8080` on a web browser
+
 # Overview
 
 Kippo-Graph is a full featured script to visualize statistics for a Cowrie (formerly Kippo) based SSH honeypot.  Kippo-Graph repository is available at https://github.com/ikoniaris/kippo-graph.  As a web application, it works great.
