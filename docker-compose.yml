@@ -4,7 +4,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./kippo-graph:/var/www/html
+      - ./config.php:/var/www/html/config.php
       - ./nginx.conf:/etc/nginx/sites-available/default
     restart: unless-stopped
     networks:

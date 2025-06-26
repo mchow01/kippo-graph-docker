@@ -34,7 +34,7 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Create nginx configuration
 COPY nginx.conf /etc/nginx/sites-available/default
 
-# Create config.php from environment variables
+# Copy kippo-graph configuration
 COPY config.php /var/www/html/config.php
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
